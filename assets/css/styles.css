@@ -1,57 +1,65 @@
     /* Reset */
 
     * {
-        padding: 0;
-        margin: 0;
-        font-family: 'roboto', sans-serif;
-        box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'roboto', sans-serif;
+      box-sizing: border-box;
     }
 
 
     /* Variables */
 
     :root {
-        --main-color: #0a2d32;
-        --main-text-color: rgb(34, 31, 31);
-        --border-color: #999;
-        --bio-bg-color: #8a4dfc;
-        --bio-border-color: #293544;
-        --about-bg-color: #748c8c;
-        --cabecalho-text-color: #fff;
+      --main-color: #0a2d32;
+      --main-text-color: rgb(34, 31, 31);
+      --border-color: #999;
+      --bio-bg-color: #8a4dfc;
+      --bio-border-color: #293544;
+      --about-bg-color: #748c8c;
+      --cabecalho-text-color: #fff;
     }
 
     .cabecalho {
       color: var(--cabecalho-text-color);
-        background-color: var(--main-color);
-        float: none;
+      background-color: var(--main-color);
+      float: none;
     }
 
     .margin {
-        padding-top: 1em;
-        padding-left: 50px;
-        padding-right: 50px;
+      padding-top: 1em;
+      padding-left: 50px;
+      padding-right: 50px;
     }
 
     .logoCabecalho {
-        position:sticky;
-        left: 30px;
-        border: 3px solid #ff0000;
+      position: sticky;
+      left: 30px;
+      border: 3px solid #ff0000;
     }
 
-    .img {
-        
+    .tabOff {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    #logoPosition {
+      float: right;
+      padding-top: 1em;
+      padding-left: 50px;
+      padding-right: 50px;
     }
 
     #container {
-        display: flex;
-        flex-direction: row;
-        color: var(--main-text-color);
-        background-color: var(--main-color);
+      display: flex;
+      flex-direction: row;
+      color: var(--main-text-color);
+      background-color: var(--main-color);
     }
 
     #about-container {
-        flex: 1 1 80%;
-        min-height: 100vh;
-        background-color: var(--about-bg-color);
-        padding: 50px;
+      flex: 1 1 80%;
+      min-height: 100vh;
+      background-color: var(--about-bg-color);
+      padding: 50px;
     }
