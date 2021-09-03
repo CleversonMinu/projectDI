@@ -43,6 +43,10 @@
       text-decoration: inherit;
     }
 
+    #tituloLogo {
+      margin-top: 2em;
+    }
+
     #logoPosition {
       float: right;
       padding-top: 1em;
