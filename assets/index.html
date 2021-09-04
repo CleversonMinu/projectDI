@@ -7,7 +7,10 @@
   <title>DI - Briefing Comercial</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!--INÍCIO DO CABEÇALHO-->
+
   <div class="cabecalho">
     <div>
       <dir>
@@ -20,84 +23,111 @@
       </dir>
     </div>
 
-    <dir class="tab">
-      <ul class="nav nav-tabs nav-fill">
-        <li class="nav-item">
-          <a class="nav-link active aria-current=" page" href="./index.html">Briefing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/desenho.html">Desenho</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/configuracao.html">Configuração</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/acao.html">Ação</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/endereco.html">Endereço</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/templates.html">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/informacao.html">Informação</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/tarifas.html">Tarifas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/prizes.html">Prizes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tabOff" href="/assets/pages/catalogoItau.html">Catálogo Itaú</a>
-        </li>
-      </ul>
-    </dir>
+    <!--INÍCIO DA BARRA DE NAVEGAÇÃO-->
+
+    <div id="tituloLogo">
+      <dir class="tab">
+        <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Briefing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/desenho.html";">Desenho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/configuracao.html";">Configuração</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/acao.html";">Ação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/endereco.html";">Endereço</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/templates.html";">Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/informacao.html";">Informação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/tarifas.html";">Tarifas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/prizes.html";">Prizes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabTextColor tabOff" href="/assets/pages/catalogoItau.html";">Catálogo Itaú</a>
+          </li>
+        </ul>
+    </div>
+
+    <!--FIM DA BARRA DE NAVEGAÇÃO-->
+
   </div>
+
+  <!--FIM DO CABEÇALHO-->
+
 </head>
 
+
 <body>
+
+  <!--INÍCIO DO FORMULÁRIO-->
+
   <main>
     <section id="about-container">
       <h3 id="cabecalho">BRIEFING - Comercial</h3>
-      <form>
+      <formclass="row g-3 needs-validation" novalidate>
+
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">A Empresa</label>
-          <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
+          <label for="validationCustom01" class="form-label">A Empresa</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" required></input>
+        </div>
+        <label for="basic-url1" class="form-label">Link da Proposta</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3" required>
+        </div>
+        <label for="basic-url2" class="form-label">Link do Contrato</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3" required>
         </div>
         <div class="mb-3">
-          <label for="formFile" class="form-label">Proposta Comercial</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">OFERTA(S) – Criar opção para adicionar novas
+          <label for="validationCustom04" class="form-label">OFERTA(S) – Criar opção para adicionar novas
             ofertas</label>
-          <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
+          <input type="text" class="form-control" id="validationCustom04" value="" rows="3" required></input>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">DESCRIÇÃO DA OFERTA (Lim. 500
             caracteres)</label>
-          <input class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="500"></input>
+          <div class="input-group mb-3">
+            <textarea maxlength="500" class="form-control" aria-label="With textarea" rows="3"></textarea>
+          </div>
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">ABRANGÊNCIA DE UTILIZAÇÃO (criar 2 opções: Nacional e
+          <label for="validationCustom06" class="form-label">REGRA DE UTILIZAÇÃO (Se houver) (Atendimento):
+          </label>
+          <input type="text" class="form-control" id="validationCustom06" rows="3" required>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom07" class="form-label">ABRANGÊNCIA DE UTILIZAÇÃO (criar 2 opções: Nacional e
             mais informações)</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+          <input type="text" class="form-control" id="validationCustom07" rows="3" required>
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">PRAZO DE UTILIZAÇÃO (Colocar uma descrição informando
+          <label for="validationCustom08" class="form-label">PRAZO DE UTILIZAÇÃO (Colocar uma descrição informando
             a
             diferente de 30 e 90 dias)</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+          <input type="text" class="form-control" id="validationCustom08" rows="3" required>
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">CANCELAMENTO (POLÍTICA DO PARCEIRO) (Parceiro informar
+          <label for="validationCustom09" class="form-label">CANCELAMENTO (POLÍTICA DO PARCEIRO) (Parceiro informar
             sua política de cancelamento)</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+          <input type="text" class="form-control" id="validationCustom09" rows="3" required>
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Operadoras participantes </label>
+          <label for="validationCustom10" class="form-label">Operadoras participantes </label>
           <dir>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -148,26 +178,35 @@
           <label for="formGroupExampleInput" class="form-label">Ativação do Voucher</label>
           <div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="ambiente" id="ambiente1" value="option1" checked>
-              <label class="form-check-label" for="ambiente1">
+              <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck1">
                 Ambiente normal
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="ambiente" id="ambiente2" value="option2">
-              <label class="form-check-label" for="ambiente2">
+              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck2">
                 Ambiente personalizado
               </label>
             </div>
           </div>
         </div>
+        <div class="col-12">
+          <button class="btn btn-light btn-lg button" type="submit">Enviar</button>
+        </div>
+        </form>
+        <footer class="copyright">
+          <p>&copy; minu • 2021</p>
+        </footer>
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  <!--FIM DO FORMULÁRIO-->
+
+  <script src="/assets/js/main.js" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
   </script>
-
 </body>
 
 </html>

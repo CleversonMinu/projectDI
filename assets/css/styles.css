@@ -32,15 +32,26 @@
       padding-right: 50px;
     }
 
-    .logoCabecalho {
-      position: sticky;
-      left: 30px;
-      border: 3px solid #ff0000;
-    }
-
     .tabOff {
       color: inherit;
       text-decoration: inherit;
+    }
+
+    .tabTextColor {
+      color: #04da83;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+
+  .copyright {
+    background-color: var(--about-bg-color);
+    float: right;
+    }
+
+    #tituloLogo {
+      margin-top: 2em;
     }
 
     #logoPosition {
