@@ -11,10 +11,10 @@
 </head>
 
 <body id="fix-color">
-      
-<!-- AJUSTE BRIEFING -->
-<div id="briefing"></div>
-      
+
+  <!-- AJUSTE BRIEFING -->
+  <div id="briefing"></div>
+
   <main>
     <section id="about-container">
       <div>
@@ -118,10 +118,10 @@
             <label class="form-check-label" for="inlineCheckbox11">Outras</label>
           </div>
       </div>
-            
-<!-- AJUSTE BRIEFING -->
-<div id="desenho"></div>
-      
+
+      <!-- AJUSTE BRIEFING -->
+      <div id="desenho"></div>
+
       <div>
         <label for="formGroupExampleInput" class="form-label">Ativação do Voucher</label>
         <div>
@@ -140,10 +140,47 @@
           </div>
         </div>
       </div>
+
+      <!-- Página Desenho da Solução -->
+
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
         <h3>DESENHO DA SOLUÇÃO – Comercial/Atendimento</h3>
       </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Modelo de Integração (Comercial)</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
+              checked>
+            <label class="form-check-label" for="validationFormCheck1">
+              Manual
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">
+              API
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Quantidade de caracteres do voucher:</span>
+          <input type="number" class="form-control" min="0">
+          <span class="input-group-text" id="basic-addon1">Prazo para gerar os vouchers:</span>
+          <input type="number" class="form-control" min="0">
+          <label class="input-group-text">dias</label>
+      </div>
+
+
+
+
+
+
+
+
+
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
@@ -198,7 +235,7 @@
 
 <!--INÍCIO DO CABEÇALHO-->
 <header class="cabecalho">
-  <div>
+  <div class="boxColor">
     <div>
       <dir>
         <div id="logoPosition">
@@ -247,8 +284,15 @@
             </li>
           </ul>
       </div>
+      <div class="idNumber">
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Número da DI</span>
+          <span class="input-group-text" id="unique"></span>
+        </div>
+      </div>
     </nav>
 </header>
+</div>
 
 <script src="./assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
