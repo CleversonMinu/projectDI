@@ -28,7 +28,6 @@ header {
   top: 0;
   width: 100%;
   padding: 9px 0;
-  text-align: center;
 }
 
 main {
@@ -37,8 +36,13 @@ main {
 
 .cabecalho {
   color: var(--cabecalho-text-color);
-  background-color: var(--main-color);
   float: none;
+  padding-top: 0px;
+}
+
+.boxColor {
+  background-color: var(--main-color);
+  padding-bottom: 9px;
 }
 
 .margin {
@@ -73,6 +77,15 @@ main {
 
 .newBox {
   margin-top: 3em;
+}
+
+.idNumber {
+  float: right;
+  padding-right: 50px;
+}
+
+.boxSpace {
+  display: flex;
 }
 
 #charNum {
