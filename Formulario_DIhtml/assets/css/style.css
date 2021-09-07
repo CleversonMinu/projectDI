@@ -88,6 +88,10 @@ main {
   display: flex;
 }
 
+.boxSeparator {
+  margin-left: 10px;
+}
+
 #charNum {
   float: right;
 }

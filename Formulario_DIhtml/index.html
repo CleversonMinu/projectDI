@@ -12,8 +12,9 @@
 
 <body id="fix-color">
 
-  <!-- AJUSTE BRIEFING -->
-  <div id="briefing"></div>
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
+<div id="briefing"></div>
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
   <main>
     <section id="about-container">
@@ -71,7 +72,7 @@
         <input type="text" class="form-control" id="validationCustom09" rows="3" required>
       </div>
       <div class="mb-3">
-        <label for="validationCustom10" class="form-label">Operadoras participantes </label>
+        <label for="validationCustom10" class="form-label">Operadoras participantes</label>
         <dir>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -119,8 +120,9 @@
           </div>
       </div>
 
-      <!-- AJUSTE BRIEFING -->
-      <div id="desenho"></div>
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
+<div id="desenho"></div>
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
       <div>
         <label for="formGroupExampleInput" class="form-label">Ativação do Voucher</label>
@@ -141,7 +143,7 @@
         </div>
       </div>
 
-      <!-- Página Desenho da Solução -->
+      <!-- Desenho da Solução -->
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
@@ -165,22 +167,95 @@
           </div>
         </div>
       </div>
-      <div class="input-group mb-3">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Voucher</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+              checked>
+            <label class="form-check-label" for="validationFormCheck3">
+              Numérico
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck4">
+              Alfanumérico
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck5">
+              Texto
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck6" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck6">
+              Personalizado
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="boxSpace mb-3">
+        <div class="input-group">
           <span class="input-group-text" id="basic-addon1">Quantidade de caracteres do voucher:</span>
           <input type="number" class="form-control" min="0">
+        </div>
+        <div class="input-group boxSeparator">
+          <span class="input-group-text" id="basic-addon1">Prazo validade:</span>
+          <input type="number" class="form-control" min="0">
+          <label class="input-group-text">dias</label>
+        </div>
+        <div class="input-group boxSeparator">
           <span class="input-group-text" id="basic-addon1">Prazo para gerar os vouchers:</span>
           <input type="number" class="form-control" min="0">
           <label class="input-group-text">dias</label>
+        </div>
+      </div>
+      <div class="boxSpace mb-3">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">Canal de envio dos lotes:</span>
+          <input type="text" class="form-control" min="0">
+        </div>
+        <div class="input-group boxSeparator">
+          <span class="input-group-text" id="basic-addon1">Reposição de lotes (periodicidade):</span>
+          <input type="number" class="form-control" min="0">
+          <label class="input-group-text">dias</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Tipo – (Minu.pro)
+        </label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+              checked>
+            <label class="form-check-label" for="validationFormCheck3">
+              Um por recompensa
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck4">
+              Quantidade livre
+
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
+<div id="configuracao"></div>
+<!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">FLUXO DE RESGATE (CX)</span>
+          <input type="text" class="form-control" min="0">
+        </div>
       </div>
 
-
-
-
-
-
-
-
-
+      <!-- Configuração da oferta -->
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
@@ -292,7 +367,6 @@
       </div>
     </nav>
 </header>
-</div>
 
 <script src="./assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
