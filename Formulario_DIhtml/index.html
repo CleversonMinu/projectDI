@@ -12,65 +12,352 @@
 
 <body id="fix-color">
 
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
-<div id="briefing"></div>
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
+  <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+  <div id="briefing"></div>
+  <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
   <main>
     <section id="about-container">
-      <div>
-        <h3 id="cabecalho">BRIEFING - Comercial</h3>
-        <formclass="row g-3 needs-validation" novalidate>
-      </div>
-      <div class="mb-3">
-        <label for="validationCustom01" class="form-label">A Empresa</label>
-        <input type="text" class="form-control" id="validationCustom01" value="" rows="3" required></input>
-      </div>
-      <label for="basic-url1" class="form-label">Link da Proposta</label>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3" required>
-      </div>
-      <label for="basic-url2" class="form-label">Link do Contrato</label>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon2">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3" required>
-      </div>
-      <div class="mb-3">
-        <label for="validationCustom04" class="form-label">OFERTA(S) – Criar opção para adicionar novas
-          ofertas</label>
-        <input type="text" class="form-control" id="validationCustom04" value="" rows="3" required></input>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">DESCRIÇÃO DA OFERTA (Lim. 500
-          caracteres)</label>
-        <p id="charNum">0 caracteres</p>
+      <form action="">
+        <div>
+          <h3 id="cabecalho">BRIEFING - Comercial</h3>
+          <formclass="row g-3 needs-validation" novalidate>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">A Empresa</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{A EMPRESA}}"
+            required></input>
+        </div>
+
+        <label for="basic-url1" class="form-label">Link da Proposta</label>
         <div class="input-group mb-3">
-          <textarea maxlength="500" class="form-control" aria-label="With textarea" rows="3"
-            onkeyup="countChars(this)"></textarea>
+          <span class="input-group-text" id="basic-addon1">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3" placeholder="{{LINK}}"
+            required>
+        </div>
+
+        <label for="basic-url2" class="form-label">Link do Contrato</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3" placeholder="{{LINK}}"
+            required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustom04" class="form-label">OFERTA(S) – Criar opção para adicionar novas
+            ofertas</label>
+          <input type="text" class="form-control" id="validationCustom04" value="" rows="3" placeholder="{{OFERTA}}"
+            required></input>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">DESCRIÇÃO DA OFERTA</label>
+          <div class="input-group">
+            <textarea maxlength="500" class="form-control" aria-label="With textarea" rows="4"
+              onkeyup="countChars500(this)" placeholder="{{DESCRIÇÃO LONGA DA OFERTA}}"></textarea>
+          </div>
+          <div id="charPosition">
+            <label id="charNum500">0</label>
+            <label">/500 caracteres</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom06" class="form-label">REGRA DE UTILIZAÇÃO (Se houver) (Atendimento):
+          </label>
+          <input type="text" class="form-control" id="validationCustom06" rows="3" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustom07" class="form-label">ABRANGÊNCIA DE UTILIZAÇÃO (criar 2 opções: Nacional e
+            mais informações)</label>
+          <input type="text" class="form-control" id="validationCustom07" rows="3" placeholder="{{LOCALIZAÇÃO}}"
+            Required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustom08" class="form-label">PRAZO DE UTILIZAÇÃO (Colocar uma descrição informando a
+            diferente de 30 e 90 dias)</label>
+          <input type="text" class="form-control" id="validationCustom08" rows="3"
+            placeholder="{{PRAZO DE UTLIZAÇÃO APÓS A ATIVAÇÃO DO VOUCHER}}" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationCustom09" class="form-label">CANCELAMENTO (POLÍTICA DO PARCEIRO) (Parceiro informar
+            sua política de cancelamento)</label>
+          <input type="text" class="form-control" id="validationCustom09" rows="3"
+            placeholder="{{POLÍTICA DE CANCELAMENTO POR PARTE DO PARCEIRO}}" required>
+        </div>
+
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="desenho"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+        <div>
+          <label for="formGroupExampleInput" class="form-label">Ativação do Voucher</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck1">
+                Ambiente normal
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck2">
+                Ambiente personalizado
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Desenho da Solução -->
+      <form action="">
+
+        <div class="separator newBox"></div>
+
+        <div class="mb-3 newBox">
+          <h3>DESENHO DA SOLUÇÃO – Comercial/Atendimento</h3>
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Modelo de Integração (Comercial)</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck1">
+                Manual
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck2">
+                API
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Voucher</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck3">
+                Numérico
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck4">
+                Alfanumérico
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck5">
+                Texto
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck6" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck6">
+                Personalizado
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="boxSpace mb-3">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">Quantidade de caracteres do voucher:</span>
+          <input type="number" class="form-control" min="0" required>
+        </div>
+        <div class="input-group boxSeparator">
+          <span class="input-group-text" id="basic-addon1">Prazo validade:</span>
+          <input type="number" class="form-control" min="0" required>
+          <label class="input-group-text">dias</label>
+        </div>
+        <div class="input-group boxSeparator">
+          <span class="input-group-text" id="basic-addon1">Prazo para gerar os vouchers:</span>
+          <input type="number" class="form-control" min="0" required>
+          <label class="input-group-text">dias</label>
+        </div>
+      </div>
+      <div class="boxSpace mb-3">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">Canal de envio dos lotes:</span>
+          <input type="text" class="form-control" min="0" required>
+        </div>
+        <div class="input-group boxSeparator">
+          <span class="input-group-text" id="basic-addon1">Reposição de lotes (periodicidade):</span>
+          <input type="number" class="form-control" min="0" required>
+          <label class="input-group-text">dias</label>
         </div>
       </div>
       <div class="mb-3">
-        <label for="validationCustom06" class="form-label">REGRA DE UTILIZAÇÃO (Se houver) (Atendimento):
+        <label for="formGroupExampleInput" class="form-label">Tipo – (Minu.pro)
         </label>
-        <input type="text" class="form-control" id="validationCustom06" rows="3" required>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+              checked>
+            <label class="form-check-label" for="validationFormCheck3">
+              Um por recompensa
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck4">
+              Quantidade livre
+
+              <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+              <div id="configuracao"></div>
+              <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+            </label>
+          </div>
+        </div>
       </div>
       <div class="mb-3">
-        <label for="validationCustom07" class="form-label">ABRANGÊNCIA DE UTILIZAÇÃO (criar 2 opções: Nacional e
-          mais informações)</label>
-        <input type="text" class="form-control" id="validationCustom07" rows="3" required>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">FLUXO DE RESGATE (CX)</span>
+          <input type="text" class="form-control" min="0" required>
+        </div>
       </div>
+
+      <!-- Configuração da oferta -->
+
+      <div class="separator newBox"></div>
+
+      <div class="mb-3 newBox">
+        <h3 id="configuracao">CONFIGURAÇÃO DA OFERTA – Comercial/Marketing/Minu.pro</h3>
+      </div>
+
       <div class="mb-3">
-        <label for="validationCustom08" class="form-label">PRAZO DE UTILIZAÇÃO (Colocar uma descrição informando
-          a
-          diferente de 30 e 90 dias)</label>
-        <input type="text" class="form-control" id="validationCustom08" rows="3" required>
+        <label for="validationCustom08" class="form-label">Aliança (Comercial)</label>
+        <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{NOME DA ALIANÇA}}"
+          required>
       </div>
+
       <div class="mb-3">
-        <label for="validationCustom09" class="form-label">CANCELAMENTO (POLÍTICA DO PARCEIRO) (Parceiro informar
-          sua política de cancelamento)</label>
-        <input type="text" class="form-control" id="validationCustom09" rows="3" required>
+        <label for="validationCustom08" class="form-label">Grupo (Comercial)</label>
+        <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{GRUPO DA ALIANÇA}}"
+          required>
       </div>
+
+      <!-- ESTOU TRABALHANDO AQUI -->
+      <!--  teste modal -->
+
+
+
+
+
+
+
+      <!-- ESTOU TRABALHANDO AQUI -->
+
+
+      <div class="row">
+        <div class="col">
+          <label for="exampleFormControlTextarea2" class="form-label">Título (Marketing)</label>
+          <input type="text" class="form-control" maxlength="60"
+            placeholder="{{TÍTULO DO PRÊMIO}} Mostrar onde e como será utilizado." aria-label="Título"
+            onkeyup="countChars60(this)">
+          <div id="charPosition">
+            <label id="charNum60">0</label>
+            <label">/60 caracteres</label>
+          </div>
+        </div>
+
+        <div class="col">
+          <label for="exampleFormControlTextarea2" class="form-label">Subtítulo (Marketing)</label>
+          <input type="text" class="form-control" maxlength="60"
+            placeholder="{{SUBTÍTULO DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Título"
+            onkeyup="countChars602(this)">
+          <div id="charPosition">
+            <label id="charNum602">0</label>
+            <label">/60 caracteres</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="exampleFormControlTextarea2" class="form-label">Nome (Minu.pro)</label>
+          <input type="text" class="form-control" maxlength="28"
+            placeholder="{{PRIZE.NAME}} Definido durante a configuração." aria-label="Nome"
+            onkeyup="countChars28(this)">
+          <div id="charPosition">
+            <label id="charNum28">0</label>
+            <label">/28 caracteres</label>
+          </div>
+        </div>
+
+        <div class="col">
+          <label for="exampleFormControlTextarea2" class="form-label">Descrição Abreviada (Marketing)</label>
+          <input type="text" class="form-control" maxlength="65"
+            placeholder="{{DESCRIÇÃO ABREVIADA DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Descrição"
+            onkeyup="countChars65(this)">
+          <div id="charPosition">
+            <label id="charNum65">0</label>
+            <label">/65 caracteres</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-3">
+        <label for="exampleFormControlTextarea2" class="form-label">Descrição Longa (Marketing)</label>
+        <textarea type="text" class="form-control" maxlength="200" rows="2"
+          placeholder="{{DESCRIÇÃO LONGA DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Descrição Longa"
+          onkeyup="countChars200(this)"></textarea>
+        <div id="charPosition">
+          <label id="charNum200">0</label>
+          <label">/200 caracteres</label>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Tipo
+          </label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck3">
+                Um por recompensa
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck4">
+                Quantidade livre
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Unidade – Não alterar
+          </label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck3">
+                UN
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+
       <div class="mb-3">
         <label for="validationCustom10" class="form-label">Operadoras participantes</label>
         <dir>
@@ -120,147 +407,20 @@
           </div>
       </div>
 
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
-<div id="desenho"></div>
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
-      <div>
-        <label for="formGroupExampleInput" class="form-label">Ativação do Voucher</label>
-        <div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
-              checked>
-            <label class="form-check-label" for="validationFormCheck1">
-              Ambiente normal
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck2">
-              Ambiente personalizado
-            </label>
-          </div>
-        </div>
-      </div>
 
-      <!-- Desenho da Solução -->
 
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3>DESENHO DA SOLUÇÃO – Comercial/Atendimento</h3>
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Modelo de Integração (Comercial)</label>
-        <div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
-              checked>
-            <label class="form-check-label" for="validationFormCheck1">
-              Manual
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck2">
-              API
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Voucher</label>
-        <div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
-              checked>
-            <label class="form-check-label" for="validationFormCheck3">
-              Numérico
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck4">
-              Alfanumérico
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck5">
-              Texto
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck6" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck6">
-              Personalizado
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="boxSpace mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">Quantidade de caracteres do voucher:</span>
-          <input type="number" class="form-control" min="0">
-        </div>
-        <div class="input-group boxSeparator">
-          <span class="input-group-text" id="basic-addon1">Prazo validade:</span>
-          <input type="number" class="form-control" min="0">
-          <label class="input-group-text">dias</label>
-        </div>
-        <div class="input-group boxSeparator">
-          <span class="input-group-text" id="basic-addon1">Prazo para gerar os vouchers:</span>
-          <input type="number" class="form-control" min="0">
-          <label class="input-group-text">dias</label>
-        </div>
-      </div>
-      <div class="boxSpace mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">Canal de envio dos lotes:</span>
-          <input type="text" class="form-control" min="0">
-        </div>
-        <div class="input-group boxSeparator">
-          <span class="input-group-text" id="basic-addon1">Reposição de lotes (periodicidade):</span>
-          <input type="number" class="form-control" min="0">
-          <label class="input-group-text">dias</label>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Tipo – (Minu.pro)
-        </label>
-        <div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
-              checked>
-            <label class="form-check-label" for="validationFormCheck3">
-              Um por recompensa
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck4">
-              Quantidade livre
 
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
-<div id="configuracao"></div>
-<!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">FLUXO DE RESGATE (CX)</span>
-          <input type="text" class="form-control" min="0">
-        </div>
-      </div>
 
-      <!-- Configuração da oferta -->
 
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="configuracao">CONFIGURAÇÃO DA OFERTA –Comercial/Marketing/Minu.pro</h3>
-      </div>
+
+
+
+
+
+
+      <!-- NÃO CRIADOS -->
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
@@ -300,7 +460,7 @@
       <div class="col-12">
         <button class="btn btn-light btn-lg button" type="submit">Enviar</button>
       </div>
-      </form>
+
       <footer class="copyright">
         <p>&copy; minu • 2021</p>
       </footer>

@@ -92,7 +92,13 @@ main {
   margin-left: 10px;
 }
 
-#charNum {
+.column {
+  float: left;
+  width: 50%;
+  margin-right: 10px;
+}
+
+#charPosition {
   float: right;
 }
 
@@ -127,4 +133,118 @@ main {
 
 #briefing {
   padding-top: 5px;
+}
+
+/* MODAL FORM */
+#modal-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+  transition: background 0.3s;
+}
+
+#modal-open, input[type='submit'] {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #4586de;
+}
+
+#modal-open:hover {
+  background: #3e78c7;
+}
+
+#contact-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+  background: #efefef;
+  margin: 35px auto;
+  width: 60%;
+  box-shadow: 4px 4px 5px rgb(0, 0, 0, 0.25);
+}
+
+#modal-header {
+  background: #4586de;
+  color: #fff;
+  padding: 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#modal-header .close-modal {
+  font-size: 50px;
+  float: right;
+}
+
+#modal-header .close-modal:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+#modal-footer {
+  background: #4586de;
+  color: #fff;
+  padding: 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#modal-body {
+  padding: 25px 30px;
+}
+
+#modal-body h3 {
+  color: #4586de;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.form-group {
+  width: 28px 0;
+  margin: 20px 0;
+  margin-left: 12.5%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-group input, textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+input[type='submit'] {
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 75%;
+  margin-left: 12.5%;
+  transition: background 0.3s;
+
+}
+
+input[type='submit']:hover {
+  background: #3e78c7;
 }
