@@ -214,204 +214,284 @@
             <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
             <label class="form-check-label" for="validationFormCheck4">
               Quantidade livre
-
-              <!-- AJUSTE POSIÇÃO DO ANCHOR -->
-              <div id="configuracao"></div>
-              <!-- AJUSTE POSIÇÃO DO ANCHOR -->
-
             </label>
           </div>
         </div>
       </div>
+
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+      <div id="configuracao"></div>
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
       <div class="mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">FLUXO DE RESGATE (CX)</span>
-          <input type="text" class="form-control" min="0" required>
+        <label for="validationCustom09" class="form-label">FLUXO DE RESGATE (CX)</label>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="inputGroupFile02">
         </div>
       </div>
 
       <!-- Configuração da oferta -->
 
       <div class="separator newBox"></div>
-
-      <div class="mb-3 newBox">
-        <h3 id="configuracao">CONFIGURAÇÃO DA OFERTA – Comercial/Marketing/Minu.pro</h3>
-      </div>
-
-      <div class="mb-3">
-        <label for="validationCustom08" class="form-label">Aliança (Comercial)</label>
-        <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{NOME DA ALIANÇA}}"
-          required>
-      </div>
-
-      <div class="mb-3">
-        <label for="validationCustom08" class="form-label">Grupo (Comercial)</label>
-        <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{GRUPO DA ALIANÇA}}"
-          required>
-      </div>
-
-      <!-- ESTOU TRABALHANDO AQUI -->
-      <!--  teste modal -->
-
-
-
-
-
-
-
-      <!-- ESTOU TRABALHANDO AQUI -->
-
-
-      <div class="row">
-        <div class="col">
-          <label for="exampleFormControlTextarea2" class="form-label">Título (Marketing)</label>
-          <input type="text" class="form-control" maxlength="60"
-            placeholder="{{TÍTULO DO PRÊMIO}} Mostrar onde e como será utilizado." aria-label="Título"
-            onkeyup="countChars60(this)">
-          <div id="charPosition">
-            <label id="charNum60">0</label>
-            <label">/60 caracteres</label>
-          </div>
+      <div>
+        <div class="mb-3 newBox">
+          <h3 id="configuracao">CONFIGURAÇÃO DA OFERTA – Comercial/Marketing/Minu.pro</h3>
         </div>
 
-        <div class="col">
-          <label for="exampleFormControlTextarea2" class="form-label">Subtítulo (Marketing)</label>
-          <input type="text" class="form-control" maxlength="60"
-            placeholder="{{SUBTÍTULO DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Título"
-            onkeyup="countChars602(this)">
-          <div id="charPosition">
-            <label id="charNum602">0</label>
-            <label">/60 caracteres</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <label for="exampleFormControlTextarea2" class="form-label">Nome (Minu.pro)</label>
-          <input type="text" class="form-control" maxlength="28"
-            placeholder="{{PRIZE.NAME}} Definido durante a configuração." aria-label="Nome"
-            onkeyup="countChars28(this)">
-          <div id="charPosition">
-            <label id="charNum28">0</label>
-            <label">/28 caracteres</label>
-          </div>
-        </div>
-
-        <div class="col">
-          <label for="exampleFormControlTextarea2" class="form-label">Descrição Abreviada (Marketing)</label>
-          <input type="text" class="form-control" maxlength="65"
-            placeholder="{{DESCRIÇÃO ABREVIADA DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Descrição"
-            onkeyup="countChars65(this)">
-          <div id="charPosition">
-            <label id="charNum65">0</label>
-            <label">/65 caracteres</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mb-3">
-        <label for="exampleFormControlTextarea2" class="form-label">Descrição Longa (Marketing)</label>
-        <textarea type="text" class="form-control" maxlength="200" rows="2"
-          placeholder="{{DESCRIÇÃO LONGA DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Descrição Longa"
-          onkeyup="countChars200(this)"></textarea>
-        <div id="charPosition">
-          <label id="charNum200">0</label>
-          <label">/200 caracteres</label>
-        </div>
-      </div>
-
-      <form action="">
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Tipo
-          </label>
-          <div>
-            <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
-                checked>
-              <label class="form-check-label" for="validationFormCheck3">
-                Um por recompensa
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck4">
-                Quantidade livre
-              </label>
-            </div>
-          </div>
+          <label for="validationCustom08" class="form-label">Aliança (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{NOME DA ALIANÇA}}"
+            required>
         </div>
-      </form>
-      <form action="">
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Unidade – Não alterar
-          </label>
-          <div>
-            <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
-                checked>
-              <label class="form-check-label" for="validationFormCheck3">
-                UN
-              </label>
-            </div>
-          </div>
-        </div>
-      </form>
 
-      <div class="mb-3">
-        <label for="validationCustom10" class="form-label">Operadoras participantes</label>
-        <dir>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Claro</label>
+        <div class="mb-3">
+          <label for="validationCustom08" class="form-label">Grupo (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{GRUPO DA ALIANÇA}}"
+            required>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlTextarea2" class="form-label">Título (Marketing)</label>
+            <input type="text" class="form-control" maxlength="60"
+              placeholder="{{TÍTULO DO PRÊMIO}} Mostrar onde e como será utilizado." aria-label="Título"
+              onkeyup="countChars60(this)">
+            <div id="charPosition">
+              <label id="charNum60">0</label>
+              <label">/60 caracteres</label>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">CTBC</label>
+
+          <div class="col">
+            <label for="exampleFormControlTextarea2" class="form-label">Subtítulo (Marketing)</label>
+            <input type="text" class="form-control" maxlength="60"
+              placeholder="{{SUBTÍTULO DO PRÊMIO}} - Mostrar onde e como será utilizado." aria-label="Título"
+              onkeyup="countChars602(this)">
+            <div id="charPosition">
+              <label id="charNum602">0</label>
+              <label">/60 caracteres</label>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-            <label class="form-check-label" for="inlineCheckbox3">NEXTEL</label>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlTextarea2" class="form-label">Nome (Minu.pro)</label>
+            <input type="text" class="form-control" maxlength="28"
+              placeholder="{{PRIZE.NAME}} Definido durante a configuração." aria-label="Nome"
+              onkeyup="countChars28(this)">
+            <div id="charPosition">
+              <label id="charNum28">0</label>
+              <label">/28 caracteres</label>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-            <label class="form-check-label" for="inlineCheckbox4">Oi</label>
+
+          <div class="col">
+            <label for="exampleFormControlTextarea2" class="form-label">Descrição Abreviada (Marketing)</label>
+            <input type="text" class="form-control" maxlength="65"
+              placeholder="{{DESCRIÇÃO ABREVIADA DO PRÊMIO}} - Mostrar onde e como será utilizado."
+              aria-label="Descrição" onkeyup="countChars65(this)">
+            <div id="charPosition">
+              <label id="charNum65">0</label>
+              <label">/65 caracteres</label>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-            <label class="form-check-label" for="inlineCheckbox5">Sercomtel</label>
+        </div>
+
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Descrição Longa (Marketing)</label>
+          <textarea type="text" class="form-control" maxlength="200" rows="2"
+            placeholder="{{DESCRIÇÃO LONGA DO PRÊMIO}} - Mostrar onde e como será utilizado."
+            aria-label="Descrição Longa" onkeyup="countChars200(this)"></textarea>
+          <div id="charPosition">
+            <label id="charNum200">0</label>
+            <label">/200 caracteres</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
-            <label class="form-check-label" for="inlineCheckbox6">TIM</label>
+        </div>
+
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Tipo
+            </label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck3">
+                  Um por recompensa
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck4">
+                  Quantidade livre
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
-            <label class="form-check-label" for="inlineCheckbox7">Vivo</label>
+        </form>
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Unidade – Não alterar
+            </label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck3">
+                  UN
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8" disabled>
-            <label class="form-check-label" for="inlineCheckbox8">Claro Chile</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9" disabled>
-            <label class="form-check-label" for="inlineCheckbox9">Movistar Chile</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10" disabled>
-            <label class="form-check-label" for="inlineCheckbox10">WOM Chile</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
-            <label class="form-check-label" for="inlineCheckbox11">Outras</label>
-          </div>
+        </form>
+
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="acao"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+        <div class="mb-3">
+          <label for="validationCustom10" class="form-label">Operadoras participantes</label>
+          <dir>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Claro</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">CTBC</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">NEXTEL</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+              <label class="form-check-label" for="inlineCheckbox4">Oi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+              <label class="form-check-label" for="inlineCheckbox5">Sercomtel</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+              <label class="form-check-label" for="inlineCheckbox6">TIM</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+              <label class="form-check-label" for="inlineCheckbox7">Vivo</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8" disabled>
+              <label class="form-check-label" for="inlineCheckbox8">Claro Chile</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9" disabled>
+              <label class="form-check-label" for="inlineCheckbox9">Movistar Chile</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10" disabled>
+              <label class="form-check-label" for="inlineCheckbox10">WOM Chile</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+              <label class="form-check-label" for="inlineCheckbox11">Outras</label>
+            </div>
+        </div>
       </div>
 
+      <!--Configuração da Ação para resgate de voucher-->
 
+      <div class="separator newBox"></div>
+      <div>
+        <div class="mb-3 newBox">
+          <h3 id="acao">AÇÃO PARA RESGATAR O VOUCHER - Atendimento</h3>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Título (Não alterar)</label>
+          <input type="text" class="form-control" id="validationCustom01" value="RESGATAR" rows="3" required></input>
+        </div>
 
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="endereco"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
+        <label for="basic-url1" class="form-label">URL do parceiro (atendimento)</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3" placeholder="{{LINK}}"
+            required>
+        </div>
+      </div>
 
+      <!--Endereço de entrega-->
 
+      <div class="separator newBox"></div>
+      <div>
+        <div class="mb-3 newBox">
+          <h3 id="endereco">Endereço de entrega: Quando possuir questions - Comercial</h3>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Campo (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{CAMPO}}"
+            required></input>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Nome (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{NOME}}"
+            required></input>
+        </div>
+
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="templates"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Texto (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{TEXTO}}"
+            required></input>
+        </div>
+      </div>
+
+      <!--Templates-->
+
+      <div>
+        <div class="separator newBox"></div>
+        <div class="mb-3 newBox">
+          <h3 id="templates">Templates - Marketing</h3>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">SMS</label>
+          <div class="input-group">
+            <textarea id="especiaisSMS" name="especiaisSMS" maxlength="160" class="form-control" aria-label="With textarea" rows="2" onkeyup="countChars160(this)"
+              placeholder="{{Sponsor}}: Chegou seu desconto de RS5 da Alianca. Acesse https://seu.bz/XXXXXXXXX insira o codigo {{coupon}} e ative seu desconto."></textarea>
+          </div>
+          <div id="charPosition">
+            <label id="charNum160">0</label>
+            <label">/160 caracteres</label>
+          </div>
+        </div>
+
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="informacao"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Recompensasdigitais.sms</label>
+          <input id="especiaisRD" name="especiaisRD" type="text" class="form-control" id="validationCustom01" value="" rows="3"
+            placeholder="Recompensas Digitais: seu desconto da Alianca chegou la no APP do BB. Va no menu Menu > Clube de Beneficios > Vouchers"
+            required></input>
+        </div>
+      </div>
+
+      <div>
+        <div class="separator newBox"></div>
+        <div class="mb-3 newBox">
+          <h3 id="informacao">Informação de Entrega - Marketing</h3>
+        </div>
+      </div>
 
 
 
@@ -424,38 +504,118 @@
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
-        <h3 id="acao">AÇÃO PARA RESGATAR O VOUCHER - Atendimento</h3>
-      </div>
-
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="endereco">Endereço de entrega: Quando possuir questions - Comercial</h3>
-      </div>
-
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="templates">Templates - Marketing</h3>
-      </div>
-
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="informacao">Informação de Entrega - Marketing</h3>
-      </div>
-
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
         <h3 id="tarifas">CADASTRO DE TARIFAS –Comercial/DM</h3>
       </div>
 
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="prizes">INCLUSÃO DOS PRIZES NAS EXPERIÊNCIAS</h3>
-      </div>
+
+
+
+
+
+
+
+
 
       <div class="separator newBox"></div>
       <div class="mb-3 newBox">
-        <h3 id="catalogoItau">CONTEÚDO PARA CATÁLOGO ITAÚ – SEMPRE PRESENTE, CREDICARD E IUPP (Marketing)</h3>
+        <h3 id="experiencias">INCLUSÃO DOS PRIZES NAS EXPERIÊNCIAS</h3>
       </div>
+
+      <div class="row">
+        <div class="col">
+          <span class="table table-light table-sm table-hover table-round-corner">
+            <h4 class="mb-3">Experiências Banco do Brasil</h4>
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-troca-facil-ii</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-troca-facil-i</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-combo-digital-estilo</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-combo-digital</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-mais-digital-i</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-facil-ii</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-digital-i</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-conta-facil</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-conta-digital-ii</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-clube-conta-digital-i</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-ourocard-anuidade-bonificada</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">banco-do-brasil-clube-ponto-pra-voce</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">banco-do-brasil-conta-facil</label>
+            </div>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="table table-light table-sm table-hover table-round-corner">
+            <h4 class="mb-3">Experiências GleeBem</h4>
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">gleebem-resgate-recompensas</label>
+            </div>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="table table-light table-sm table-hover table-round-corner">
+            <h4 class="mb-3">Experiências Internas Minutrade</h4>
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">bb-ourocard-anuidade-bonificada</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">banco-do-brasil-clube-ponto-pra-voce</label>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <label class="form-check-label" for="flexSwitchCheckChecked">banco-do-brasil-conta-facil</label>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div class="separator newBox"></div>
+      <!--<div class="mb-3 newBox">
+        <h3 id="catalogoItau">CONTEÚDO PARA CATÁLOGO ITAÚ – SEMPRE PRESENTE, CREDICARD E IUPP (Marketing)</h3>
+      </div>-->
 
       <div class="col-12">
         <button class="btn btn-light btn-lg button" type="submit">Enviar</button>
@@ -512,11 +672,11 @@
               <a class="nav-link tabTextColor" href="#tarifas">Tarifas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link tabTextColor" href="#prizes">Prizes</a>
+              <a class="nav-link tabTextColor" href="#experiencias">Experiências</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link tabTextColor" href="#catalogoItau">Catálogo Itaú</a>
-            </li>
+            </li> -->
           </ul>
       </div>
       <div class="idNumber">
@@ -529,8 +689,10 @@
 </header>
 
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/scripts.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </html>
