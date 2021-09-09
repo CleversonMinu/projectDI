@@ -18,9 +18,13 @@ function countChars200(obj){
   document.getElementById("charNum200").innerHTML = obj.value.length;
 }
 
-
 function countChars28(obj){
   document.getElementById("charNum28").innerHTML = obj.value.length;
+}
+
+
+function countChars160(obj){
+  document.getElementById("charNum160").innerHTML = obj.value.length;
 }
 
 /* Gerador de ID */

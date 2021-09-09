@@ -17,6 +17,7 @@
   --bio-border-color: #293544;
   --about-bg-color: #748c8c;
   --cabecalho-text-color: #fff;
+  --table-color: #b0c9c9;
 }
 
 nav {
@@ -96,6 +97,21 @@ main {
   float: left;
   width: 50%;
   margin-right: 10px;
+}
+
+.table-text-family {
+  font-family: 'roboto', sans-serif;
+  color: rgb(49, 49, 49);
+}
+
+.table-round-corner {
+  margin-top: 15px;
+  overflow:hidden;
+  border-radius: 5px;
+}
+
+.table-text-center {
+  text-align: center;
 }
 
 #charPosition {
