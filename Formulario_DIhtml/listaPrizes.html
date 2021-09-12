@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Adicionar Prizes</h1>
+      <div>
+        <div class="col-md-4">
+          <label class="form-label">Nome</label>
+          <input type="text" class="form-control input-nome">
+        </div>
+        <div class="col-md-4">
+          <label class="form-produto">Valor do produto</label>
+          <input type="number" class="form-control input-produto" min="0">
+        </div>
+        <div class="col-md-4">
+          <label class="form-face">Valor de face</label>
+          <input type="number" class="form-control input-face" min="0">
+        </div>
+        <div class="col-md-4">
+          <label class="form-repasse">% do repasse</label>
+          <input type="number" class="form-control input-repasse" min="0">
+        </div>
+        <div class="col-md-4">
+          <label class="form-preco">Valor de repasse/preço</label>
+          <input type="number" class="form-control input-preco" min="0">
+        </div>
+        <div>
+          <button class="btn btn-light btn-tarefa">adicionar</button>
+        </div>
+      </div>
+      <ul class="tarefas"></ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/mainLista.js"></script>
+</body>
+
+</html>
