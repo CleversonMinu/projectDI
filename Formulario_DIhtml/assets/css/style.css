@@ -61,6 +61,11 @@ main {
   color: #04da83;
 }
 
+.tabTextColor:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .button {
   margin-top: 1em;
 }
@@ -78,6 +83,11 @@ main {
 
 .newBox {
   margin-top: 3em;
+}
+
+.separatoButton {
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .idNumber {
@@ -106,7 +116,7 @@ main {
 
 .table-round-corner {
   margin-top: 15px;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -160,7 +170,8 @@ main {
   transition: background 0.3s;
 }
 
-#modal-open, input[type='submit'] {
+#modal-open,
+input[type='submit'] {
   font-size: 50px;
   text-transform: uppercase;
   color: #fff;
@@ -244,7 +255,8 @@ main {
   font-size: 18px;
 }
 
-.form-group input, textarea {
+.form-group input,
+textarea {
   width: 100%;
   padding: 10px 20px;
   border: none;

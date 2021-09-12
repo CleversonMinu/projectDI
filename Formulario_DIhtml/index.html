@@ -57,11 +57,13 @@
             <textarea maxlength="500" class="form-control" aria-label="With textarea" rows="4"
               onkeyup="countChars500(this)" placeholder="{{DESCRIÇÃO LONGA DA OFERTA}}"></textarea>
           </div>
+
           <div id="charPosition">
             <label id="charNum500">0</label>
             <label">/500 caracteres</label>
           </div>
         </div>
+
         <div class="mb-3">
           <label for="validationCustom06" class="form-label">REGRA DE UTILIZAÇÃO (Se houver) (Atendimento):
           </label>
@@ -103,6 +105,7 @@
                 Ambiente normal
               </label>
             </div>
+
             <div class="form-check form-check-inline">
               <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
               <label class="form-check-label" for="validationFormCheck2">
@@ -114,6 +117,7 @@
       </form>
 
       <!-- Desenho da Solução -->
+
       <form action="">
 
         <div class="separator newBox"></div>
@@ -125,94 +129,106 @@
           <label for="formGroupExampleInput" class="form-label">Modelo de Integração (Comercial)</label>
           <div>
             <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
                 checked>
-              <label class="form-check-label" for="validationFormCheck1">
+              <label class="form-check-label" for="validationFormCheck3">
                 Manual
               </label>
             </div>
+
             <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck2">
+              <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck4">
                 API
               </label>
             </div>
           </div>
         </div>
       </form>
+
       <form action="">
         <div class="mb-3">
           <label for="formGroupExampleInput" class="form-label">Voucher</label>
           <div>
             <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+              <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required
                 checked>
-              <label class="form-check-label" for="validationFormCheck3">
+              <label class="form-check-label" for="validationFormCheck5">
                 Numérico
               </label>
             </div>
-            <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck4">
-                Alfanumérico
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck5">
-                Texto
-              </label>
-            </div>
+
             <div class="form-check form-check-inline">
               <input type="radio" class="form-check-input" id="validationFormCheck6" name="radio-stacked" required>
               <label class="form-check-label" for="validationFormCheck6">
+                Alfanumérico
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck7" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck7">
+                Texto
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck8" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck8">
                 Personalizado
               </label>
             </div>
           </div>
         </div>
       </form>
+
       <div class="boxSpace mb-3">
         <div class="input-group">
           <span class="input-group-text" id="basic-addon1">Quantidade de caracteres do voucher:</span>
           <input type="number" class="form-control" min="0" required>
         </div>
+
         <div class="input-group boxSeparator">
           <span class="input-group-text" id="basic-addon1">Prazo validade:</span>
           <input type="number" class="form-control" min="0" required>
           <label class="input-group-text">dias</label>
         </div>
+
         <div class="input-group boxSeparator">
           <span class="input-group-text" id="basic-addon1">Prazo para gerar os vouchers:</span>
           <input type="number" class="form-control" min="0" required>
           <label class="input-group-text">dias</label>
         </div>
       </div>
+
       <div class="boxSpace mb-3">
         <div class="input-group">
           <span class="input-group-text" id="basic-addon1">Canal de envio dos lotes:</span>
           <input type="text" class="form-control" min="0" required>
         </div>
+
         <div class="input-group boxSeparator">
           <span class="input-group-text" id="basic-addon1">Reposição de lotes (periodicidade):</span>
           <input type="number" class="form-control" min="0" required>
           <label class="input-group-text">dias</label>
         </div>
       </div>
+
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Tipo – (Minu.pro)
         </label>
         <div>
           <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+            <input type="radio" class="form-check-input" id="validationFormCheck9" name="radio-stacked" required
               checked>
-            <label class="form-check-label" for="validationFormCheck3">
+            <label class="form-check-label" for="validationFormCheck9">
               Um por recompensa
             </label>
           </div>
+
           <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-            <label class="form-check-label" for="validationFormCheck4">
+            <input type="radio" class="form-check-input" id="validationFormCheck10" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck10">
               Quantidade livre
             </label>
           </div>
@@ -233,27 +249,28 @@
       <!-- Configuração da oferta -->
 
       <div class="separator newBox"></div>
+
       <div>
         <div class="mb-3 newBox">
           <h3 id="configuracao">CONFIGURAÇÃO DA OFERTA – Comercial/Marketing/Minu.pro</h3>
         </div>
 
         <div class="mb-3">
-          <label for="validationCustom08" class="form-label">Aliança (Comercial)</label>
-          <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{NOME DA ALIANÇA}}"
+          <label for="validationCustom10" class="form-label">Aliança (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom10" rows="3" placeholder="{{NOME DA ALIANÇA}}"
             required>
         </div>
 
         <div class="mb-3">
-          <label for="validationCustom08" class="form-label">Grupo (Comercial)</label>
-          <input type="text" class="form-control" id="validationCustom08" rows="3" placeholder="{{GRUPO DA ALIANÇA}}"
+          <label for="validationCustom11" class="form-label">Grupo (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom11" rows="3" placeholder="{{GRUPO DA ALIANÇA}}"
             required>
         </div>
 
         <div class="row">
           <div class="col">
             <label for="exampleFormControlTextarea2" class="form-label">Título (Marketing)</label>
-            <input type="text" class="form-control" maxlength="60"
+            <input type="text" id="title" onchange="createName(this)" class="form-control" maxlength="60"
               placeholder="{{TÍTULO DO PRÊMIO}} Mostrar onde e como será utilizado." aria-label="Título"
               onkeyup="countChars60(this)">
             <div id="charPosition">
@@ -277,13 +294,7 @@
         <div class="row">
           <div class="col">
             <label for="exampleFormControlTextarea2" class="form-label">Nome (Minu.pro)</label>
-            <input type="text" class="form-control" maxlength="28"
-              placeholder="{{PRIZE.NAME}} Definido durante a configuração." aria-label="Nome"
-              onkeyup="countChars28(this)">
-            <div id="charPosition">
-              <label id="charNum28">0</label>
-              <label">/28 caracteres</label>
-            </div>
+            <input type="text" id="minuName" class="form-control" disabled>
           </div>
 
           <div class="col">
@@ -315,31 +326,32 @@
             </label>
             <div>
               <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                <input type="radio" class="form-check-input" id="validationFormCheck11" name="radio-stacked" required
                   checked>
-                <label class="form-check-label" for="validationFormCheck3">
+                <label class="form-check-label" for="validationFormCheck11">
                   Um por recompensa
                 </label>
               </div>
 
               <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck4">
+                <input type="radio" class="form-check-input" id="validationFormCheck12" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck12">
                   Quantidade livre
                 </label>
               </div>
             </div>
           </div>
         </form>
+
         <form action="">
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Unidade – Não alterar
             </label>
             <div>
               <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required
+                <input type="radio" class="form-check-input" id="validationFormCheck13" name="radio-stacked" required
                   checked>
-                <label class="form-check-label" for="validationFormCheck3">
+                <label class="form-check-label" for="validationFormCheck13">
                   UN
                 </label>
               </div>
@@ -347,12 +359,8 @@
           </div>
         </form>
 
-        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
-        <div id="acao"></div>
-        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
-
         <div class="mb-3">
-          <label for="validationCustom10" class="form-label">Operadoras participantes</label>
+          <label class="form-label">Operadoras participantes</label>
           <dir>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -399,28 +407,207 @@
               <label class="form-check-label" for="inlineCheckbox11">Outras</label>
             </div>
         </div>
+
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Xewards Offer Code – Configuração interna (Não
+              alterar)
+            </label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck14" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck14">BZCOUPON</label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Catálogo (É para todos os clientes?)
+              (Comercial)</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck15" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck15">
+                  Sim
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck16" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck16">
+                  Não
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Delivery Engine (Minu.pro)</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck17" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck17">
+                  Coupon
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck18" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck18">
+                  Xewards
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck19" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck19">
+                  XDH
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck20" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck20">
+                  bonuz – Exclusivo para prêmios cuja categoria é Solidariedade
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col mb-3">
+            <label class="form-label">Upload de ícone do Prize (672x672 - PNG):
+              (Marketing)</label>
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <label for="validationCustom09" class="form-label">Upload do Banner do Prize (1280x640 - PNG)
+              (Marketing)</label>
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">TAG da Aliança (Comercial)</label>
+          <input type="text" class="form-control" placeholder="{{TAG DA ALIANÇA}} 
+          " aria-label="Título">
+        </div>
+        <div>
+        </div>
+
+        <div>
+          <label for="exampleFormControlTextarea2" class="form-label">Cor Principal (Não alterar)</label>
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">FFFFFF</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="exampleFormControlTextarea2" class="form-label">Cor de Fundo (Não alterar)</label>
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">FFFFFF</label>
+          </div>
+        </div>
       </div>
+
+      <div class="row">
+        <form action="" class="col">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">O Prize é exclusivo para algum cliente?</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck21" name="radio-stacked" required
+                  checked>
+                <label class="form-check-label" for="validationFormCheck21">
+                  Sim
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="validationFormCheck22" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck22">
+                  Não
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="col-9">
+          <label for="exampleFormControlTextarea2" class="form-label">Se sim, qual Cliente?</label>
+          <input type="text" id="name" class="form-control" disabled>
+        </div>
+      </div>
+
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+      <div id="acao"></div>
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+      <form action="">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Fato Gerador:</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck23" name="radio-stacked" required
+                checked>
+              <label class="form-check-label" for="validationFormCheck23">
+                Transação entregue (1.0)
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck24" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck24">
+                Voucher/Payment Entregue
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="validationFormCheck25" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck25">
+                Voucher Ativado/Resgatado 
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
 
       <!--Configuração da Ação para resgate de voucher-->
 
       <div class="separator newBox"></div>
+
       <div>
         <div class="mb-3 newBox">
           <h3 id="acao">AÇÃO PARA RESGATAR O VOUCHER - Atendimento</h3>
         </div>
         <div class="mb-3">
-          <label for="validationCustom01" class="form-label">Título (Não alterar)</label>
-          <input type="text" class="form-control" id="validationCustom01" value="RESGATAR" rows="3" required></input>
+          <label for="validationCustom12" class="form-label">Título (Não alterar)</label>
+          <input type="text" class="form-control" id="validationCustom12" value="RESGATAR" rows="3" required></input>
         </div>
 
         <!-- AJUSTE POSIÇÃO DO ANCHOR -->
         <div id="endereco"></div>
         <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
-        <label for="basic-url1" class="form-label">URL do parceiro (atendimento)</label>
+        <label for="basic-url3" class="form-label">URL do parceiro (atendimento)</label>
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">https://example.com/users/</span>
-          <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3" placeholder="{{LINK}}"
+          <input type="text" class="form-control" id="basic-url3" aria-describedby="basic-addon3" placeholder="{{LINK}}"
             required>
         </div>
       </div>
@@ -428,19 +615,22 @@
       <!--Endereço de entrega-->
 
       <div class="separator newBox"></div>
+
       <div>
         <div class="mb-3 newBox">
           <h3 id="endereco">Endereço de entrega: Quando possuir questions - Comercial</h3>
         </div>
-        <div class="mb-3">
-          <label for="validationCustom01" class="form-label">Campo (Comercial)</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{CAMPO}}"
-            required></input>
-        </div>
-        <div class="mb-3">
-          <label for="validationCustom01" class="form-label">Nome (Comercial)</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{NOME}}"
-            required></input>
+
+        <div class="row">
+          <div class="col mb-3">
+            <label for="exampleFormControlTextarea2" class="form-label">Campo (Comercial)</label>
+            <input type="text" class="form-control" placeholder="{{CAMPO}}" aria-label="Título">
+          </div>
+
+          <div class="col mb-3">
+            <label for="exampleFormControlTextarea2" class="form-label">Nome (Comercial)</label>
+            <input type="text" class="form-control" placeholder="{{NOME}}" aria-label="Título">
+          </div>
         </div>
 
         <!-- AJUSTE POSIÇÃO DO ANCHOR -->
@@ -448,8 +638,8 @@
         <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
         <div class="mb-3">
-          <label for="validationCustom01" class="form-label">Texto (Comercial)</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" rows="3" placeholder="{{TEXTO}}"
+          <label for="validationCustom13" class="form-label">Texto (Comercial)</label>
+          <input type="text" class="form-control" id="validationCustom13" value="" rows="3" placeholder="{{TEXTO}}"
             required></input>
         </div>
       </div>
@@ -465,7 +655,8 @@
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">SMS</label>
           <div class="input-group">
-            <textarea id="especiaisSMS" name="especiaisSMS" maxlength="160" class="form-control" aria-label="With textarea" rows="2" onkeyup="countChars160(this)"
+            <textarea id="especiaisSMS" name="especiaisSMS" maxlength="160" class="form-control"
+              aria-label="With textarea" rows="2" onkeyup="countChars160(this)"
               placeholder="{{Sponsor}}: Chegou seu desconto de RS5 da Alianca. Acesse https://seu.bz/XXXXXXXXX insira o codigo {{coupon}} e ative seu desconto."></textarea>
           </div>
           <div id="charPosition">
@@ -479,12 +670,15 @@
         <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
         <div class="mb-3">
-          <label for="validationCustom01" class="form-label">Recompensasdigitais.sms</label>
-          <input id="especiaisRD" name="especiaisRD" type="text" class="form-control" id="validationCustom01" value="" rows="3"
+          <label for="validationCustom14" class="form-label">Recompensasdigitais.sms</label>
+          <input id="especiaisRD" name="especiaisRD" type="text" class="form-control" id="validationCustom14" value=""
+            rows="3"
             placeholder="Recompensas Digitais: seu desconto da Alianca chegou la no APP do BB. Va no menu Menu > Clube de Beneficios > Vouchers"
             required></input>
         </div>
       </div>
+
+      <!--Informação de Entrega-->
 
       <div>
         <div class="separator newBox"></div>
@@ -493,30 +687,139 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Criado</label>
+          <input type="text" class="form-control" placeholder="" aria-label="Título">
+        </div>
 
-
-
-
-
-
-
-      <!-- NÃO CRIADOS -->
-
-      <div class="separator newBox"></div>
-      <div class="mb-3 newBox">
-        <h3 id="tarifas">CADASTRO DE TARIFAS –Comercial/DM</h3>
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Encaminhado</label>
+          <input type="text" class="form-control" placeholder="" aria-label="Título">
+        </div>
       </div>
 
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Entregue</label>
 
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+        <div id="tarifas"></div>
+        <!-- AJUSTE POSIÇÃO DO ANCHOR -->
 
+        <div class="input-group">
+          <textarea id="especiaisEntregue" name="especiaisEntregue" class="form-control" aria-label="With textarea"
+            rows="2" placeholder=""></textarea>
+        </div>
+      </div>
 
-
-
-
-
-
+      <!-- Cadastro de Tarifas -->
 
       <div class="separator newBox"></div>
+
+      <div class="mb-3 newBox">
+        <h3 id="tarifas">CADASTRO DE TARIFAS – Comercial/DM</h3>
+      </div>
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Processo</label>
+          <input type="text" class="form-control" placeholder="{{NOME}} - Cadastro de nova Aliança e produtos."
+            aria-label="Título">
+        </div>
+
+        <div class="col mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Razão social</label>
+          <input type="text" class="form-control" placeholder="{{NOME}}" aria-label="Título">
+        </div>
+        <div class="col-2 mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">CNPJ</label>
+          <input type="text" class="form-control" placeholder="{{NOME}}" aria-label="Título">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="validationCustom15" class="form-label">Contato financeiro (nome)</label>
+          <input type="text" class="form-control" id="validationCustom15" value="" rows="3" placeholder=""
+            required></input>
+        </div>
+
+        <div class="col mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Contato financeiro (e-mail)</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com"
+            required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="validationCustom16" class="form-label">Responsável na área de Projetos</label>
+          <input type="text" class="form-control" id="validationCustom16" value="" rows="3"
+            placeholder="{{DELIVERY MANAGER}}" required></input>
+        </div>
+
+        <div class="col mb-3">
+          <label for="validationCustom17" class="form-label">Expectativa de implementação</label>
+          <input type="text" class="form-control" id="validationCustom17" value="" rows="3"
+            placeholder="{{DATA DE EXPECTATIVA DE IMPLEMENTAÇÃO}}" required></input>
+        </div>
+      </div>
+
+      <div class="newBox"></div>
+
+      <div>
+        <label class="form-label">ADICIONAR PRIZE</label>
+        <div class="needs-validation input-prize">
+          <div class="col mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control input-nome">
+          </div>
+
+          <div class="row">
+            <div class="col mb-3">
+              <label class="form-produto">Valor do produto</label>
+              <input type="number" class="form-control input-produto" min="0">
+            </div>
+
+            <div class="col mb-3">
+              <label class="form-face">Valor de face</label>
+              <input type="number" class="form-control input-face" min="0">
+            </div>
+
+            <div class="col mb-3">
+              <label class="form-repasse">% do repasse</label>
+              <input type="number" class="form-control input-repasse" min="0">
+            </div>
+
+            <div class="col">
+              <label class="form-preco">Valor de repasse/preço</label>
+              <input type="number" class="form-control input-preco" min="0">
+            </div>
+            <div>
+              <button class="btn btn-light btn-tarefa">adicionar</button>
+            </div>
+          </div>
+        </div>
+        <ul class="tarefas"></ul>
+      </div>
+
+      <div class="separatoButton"></div>
+
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+      <div id="experiencias"></div>
+      <!-- AJUSTE POSIÇÃO DO ANCHOR -->
+
+      <div class="mb-3">
+        <label class="form-label">Link do contrato/proposta assinada</label>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="inputGroupFile02">
+        </div>
+      </div>
+
+      <!--Prizes nas experiências-->
+
+      <div class="separator newBox"></div>
+
       <div class="mb-3 newBox">
         <h3 id="experiencias">INCLUSÃO DOS PRIZES NAS EXPERIÊNCIAS</h3>
       </div>
@@ -646,7 +949,7 @@
     <nav>
       <div id="tituloLogo">
         <dir class="tab">
-          <ul class="nav nav-tabs nav-fill">
+          <ul class="nav nav-fill">
             <li class="nav-item">
               <a class="nav-link tabTextColor" href="#briefing">Briefing</a>
             </li>
