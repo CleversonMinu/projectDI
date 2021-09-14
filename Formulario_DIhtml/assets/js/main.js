@@ -37,7 +37,7 @@ function countChars160(obj){
 
 /* Função para cadastrar lista de prizes */
 
-const inputPrize = document.querySelector('.input-nome', 'required', true);
+const inputPrize = document.querySelector('.input-nome');
 const inputProduto = document.querySelector('.input-produto');
 const inputFace = document.querySelector('.input-face');
 const inputRepasse = document.querySelector('.input-repasse');
